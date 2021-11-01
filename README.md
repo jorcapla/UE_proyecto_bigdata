@@ -3,7 +3,7 @@
 La asignatura pretende realizar un proyecto en equipo en el ámbito del Big Data aplicado a un caso real que incluya técnicas de aprendizaje automático, herramientas de visualización  y aspectos de seguridad y legislación pertinentes de los datos.
 >Para conseguir los objetivos se trabajarán en dos proyectos reales uno orientado a SmartCity y otro a SmartIndustry 
 
-[![N|Solid](https://github.com/jorcapla/UE_proyecto_bigdata/blob/master/Documentacion/images/Presentacion/Diapositiva17.PNG)]
+![image info](https://github.com/jorcapla/UE_proyecto_bigdata/blob/master/Documentacion/images/Presentacion/Diapositiva17.PNG)
 
 ### Objetivos
 
