@@ -3,7 +3,7 @@
 La asignatura pretende realizar un proyecto en equipo en el ámbito del Big Data aplicado a un caso real que incluya técnicas de aprendizaje automático, herramientas de visualización  y aspectos de seguridad y legislación pertinentes de los datos.
 >Para conseguir los objetivos se trabajarán en dos proyectos reales uno orientado a SmartCity y otro a SmartIndustry 
 
-![image info](https://github.com/jorcapla/UE_proyecto_bigdata/blob/master/Documentacion/images/Presentacion/Diapositiva17.PNG){ width=50% }
+![image](https://github.com/jorcapla/UE_proyecto_bigdata/blob/master/Documentacion/images/Presentacion/Diapositiva17.PNG){ width=50% }
 
 ### Objetivos
 
@@ -23,7 +23,7 @@ Los objetivos principales de esta asignatura son los siguientes
 
 La asignatura se basa en la creación de una plataforma Smart basada en FIWARE
 
-![image info](https://github.com/jorcapla/UE_proyecto_bigdata/blob/master/Documentacion/images/Presentacion/Diapositiva16.PNG){ width=50% }
+![image](https://github.com/jorcapla/UE_proyecto_bigdata/blob/master/Documentacion/images/Presentacion/Diapositiva16.PNG){ width=50% }
 
 
 
