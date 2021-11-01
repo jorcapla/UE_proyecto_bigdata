@@ -1,0 +1,35 @@
+version: "3.5"
+services:
+  orion:
+    image: fiware/orion:2.2.0
+    depends_on:
+        - mongo-db
+    networks:
+        - default
+    ports:
+        - "1026:1026"
+    command: -dbhost mongo-db -logLevel DEBUG
+  mongo-db:
+    image: mongo:3.6
+    ports:
+        - "27017:27017"
+    networks:
+        - default
+    command: --bind_ip_all --smallfiles
+  cygnus:
+    image: fiware/cygnus-ngsi:latest
+    depends_on:
+        - mongo-db
+    networks:
+        - default
+    ports:
+        - "5051:5051"
+        - "5080:5080"
+    environment:
+        - "CYGNUS_MONGO_HOSTS=mongo-db:27017"
+        - "CYGNUS_MONGO_SERVICE_PORT=5051"
+        - "CYGNUS_LOG_LEVEL=DEBUG"
+        - "CYGNUS_API_PORT=5080"
+        - "CYGNUS_SERVICE_PORT=5051"     
+        - "CYGNUS_MONGO_ATTR_PERSISTENCE=column" # data_model
+        
