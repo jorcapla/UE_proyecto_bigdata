@@ -33,8 +33,8 @@ La asignatura se basa en la creación de una plataforma Smart basada en FIWARE
 ### Contenido repositorio
 | Carpeta | README |
 | ------ | ------ |
-| Entregable I | [Entregable I/README.md] |
-| Entregable I - Ampliado | [Entregable I- Ampliado/README.md] |
+| Entregable I | Ejercicio donde se crean entidades y se almacenan sus datos en MongoDb
+| Entregable I - Ampliado | Ejercicio donde se crean entidades y se almacenan sus datos en MongoDb y en PostgreSQL
 
 
 
