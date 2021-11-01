@@ -3,7 +3,7 @@
 La asignatura pretende realizar un proyecto en equipo en el ámbito del Big Data aplicado a un caso real que incluya técnicas de aprendizaje automático, herramientas de visualización  y aspectos de seguridad y legislación pertinentes de los datos.
 >Para conseguir los objetivos se trabajarán en dos proyectos reales uno orientado a SmartCity y otro a SmartIndustry 
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](Documentacion\images\Presentacion\Diapositiva17.png)]
 
 ### Objetivos
 
