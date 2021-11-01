@@ -22,7 +22,7 @@ En este repositorio podemos encontrar los entregables de la asignatura
 
 ### Plataforma Smart
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+![image info](https://github.com/jorcapla/UE_proyecto_bigdata/blob/master/Documentacion/images/Presentacion/Diapositiva16.PNG)
 
 ### Contenido repositorio
 | Carpeta | README |
