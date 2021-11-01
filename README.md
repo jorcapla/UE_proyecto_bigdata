@@ -3,7 +3,7 @@
 La asignatura pretende realizar un proyecto en equipo en el ámbito del Big Data aplicado a un caso real que incluya técnicas de aprendizaje automático, herramientas de visualización  y aspectos de seguridad y legislación pertinentes de los datos.
 >Para conseguir los objetivos se trabajarán en dos proyectos reales uno orientado a SmartCity y otro a SmartIndustry 
 
-![image](https://github.com/jorcapla/UE_proyecto_bigdata/blob/master/Documentacion/images/Presentacion/Diapositiva17.PNG){width=50%}
+![image](https://github.com/jorcapla/UE_proyecto_bigdata/blob/master/Documentacion/images/Presentacion/Diapositiva17.PNG)
 
 ### Objetivos
 
@@ -23,9 +23,12 @@ Los objetivos principales de esta asignatura son los siguientes
 
 La asignatura se basa en la creación de una plataforma Smart basada en FIWARE
 
-![image](https://github.com/jorcapla/UE_proyecto_bigdata/blob/master/Documentacion/images/Presentacion/Diapositiva16.PNG){ width=50% }
+![image](https://github.com/jorcapla/UE_proyecto_bigdata/blob/master/Documentacion/images/Presentacion/Diapositiva16.PNG)
 
+#### Referencias interesantes sobre plataforma Smart
 
+- [fiware]
+- [fiware-tutoriales]
 
 ### Contenido repositorio
 | Carpeta | README |
@@ -37,7 +40,8 @@ La asignatura se basa en la creación de una plataforma Smart basada en FIWARE
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
+   [fiware-tutoriales]: <https://fiware-tutorials.readthedocs.io/en/latest/index.html>
+   [fiware]: <https://fiware.org>
    [dill]: <https://github.com/joemccann/dillinger>
    [git-repo-url]: <https://github.com/joemccann/dillinger.git>
    [john gruber]: <http://daringfireball.net>
