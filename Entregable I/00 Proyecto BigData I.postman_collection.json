@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "eed725a8-b286-4084-a966-0683bf74e59c",
+		"_postman_id": "0e6e2fc1-be88-4a0d-867c-3c5e61091215",
 		"name": "00 Proyecto BigData I",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -150,7 +150,7 @@
 									}
 								],
 								"url": {
-									"raw": "http://localhost:1026/v2/entities/Product012",
+									"raw": "http://localhost:1026/v2/entities/Product011",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -159,7 +159,7 @@
 									"path": [
 										"v2",
 										"entities",
-										"Product012"
+										"Product011"
 									]
 								}
 							},
@@ -177,7 +177,7 @@
 									}
 								],
 								"url": {
-									"raw": "http://localhost:1026/v2/entities/Product012?option=keyvalues",
+									"raw": "http://localhost:1026/v2/entities/Product011?options=keyValues",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -186,12 +186,12 @@
 									"path": [
 										"v2",
 										"entities",
-										"Product012"
+										"Product011"
 									],
 									"query": [
 										{
-											"key": "option",
-											"value": "keyvalues"
+											"key": "options",
+											"value": "keyValues"
 										}
 									]
 								}
@@ -210,7 +210,7 @@
 									}
 								],
 								"url": {
-									"raw": "http://localhost:1026/v2/entities/?options=keyValues",
+									"raw": "http://localhost:1026/v2/entities/?type=Product&options=keyValues",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -222,6 +222,10 @@
 										""
 									],
 									"query": [
+										{
+											"key": "type",
+											"value": "Product"
+										},
 										{
 											"key": "options",
 											"value": "keyValues"
@@ -445,6 +449,43 @@
 								"v2",
 								"entities",
 								"Product010",
+								"attrs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar precio producto 011",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "openiot",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"price\":{\"value\": 22}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/Product011/attrs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								"Product011",
 								"attrs"
 							]
 						}
