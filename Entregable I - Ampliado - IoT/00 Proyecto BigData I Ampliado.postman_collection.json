@@ -1,0 +1,741 @@
+{
+	"info": {
+		"_postman_id": "8884f48e-74b1-4ef7-8ef0-a264b884a6c7",
+		"name": "00 Proyecto BigData I Ampliado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tutorial 101",
+			"item": [
+				{
+					"name": "Health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{orion}}/version",
+							"protocol": "http",
+							"host": [
+								"{{orion}}"
+							],
+							"path": [
+								"version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Entididad",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"store_003\",\r\n    \"type\": \"Store\",\r\n    \"address\": {\r\n        \"type\": \"PostalAddress\",\r\n        \"value\": {\r\n            \"streetAddress\": \"Bornholmer Straße 65\",\r\n            \"addressRegion\": \"Berlin\",\r\n            \"addressLocality\": \"Prenzlauer Berg\",\r\n            \"postalCode\": \"10439\"\r\n        },\r\n        \"metadata\": {\r\n            \"verified\": {\r\n                \"value\": true,\r\n                \"type\": \"Boolean\"\r\n            }\r\n        }\r\n    },\r\n    \"location\": {\r\n        \"type\": \"geo:json\",\r\n        \"value\": {\r\n             \"type\": \"Point\",\r\n             \"coordinates\": [13.3986, 52.5547]\r\n        }\r\n    },\r\n    \"name\": {\r\n        \"type\": \"Text\",\r\n        \"value\": \"Bösebrücke Einkauf\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1026/v2/entities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tutorial 103",
+			"item": [
+				{
+					"name": "Crear entidades",
+					"item": [
+						{
+							"name": "Crear producto 10",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"id\":\"Product010\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Lemonade\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"S\"},\r\n      \"price\":{\"type\":\"Integer\", \"value\": 99}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear producto 11",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"id\":\"Product011\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Coke\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"S\"},\r\n      \"price\":{\"type\":\"Integer\", \"value\": 150}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operar con entidades",
+					"item": [
+						{
+							"name": "Obtener una entidad",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:1026/v2/entities/Product012",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities",
+										"Product012"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener una entidad keyvalues",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:1026/v2/entities/Product012?option=keyvalues",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities",
+										"Product012"
+									],
+									"query": [
+										{
+											"key": "option",
+											"value": "keyvalues"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener entidades de tipo producto",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:1026/v2/entities/?options=keyValues",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities",
+										""
+									],
+									"query": [
+										{
+											"key": "options",
+											"value": "keyValues"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Añadir campo oferta a producto 10",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"specialOffer\":{\"value\": true}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities/Product010/attrs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities",
+										"Product010",
+										"attrs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar precio producto 010",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"price\":{\"value\": 11}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities/Product010/attrs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities",
+										"Product010",
+										"attrs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualización en batch",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"actionType\":\"append_strict\",\r\n  \"entities\":[\r\n    {\r\n      \"id\":\"Product012\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Brandy\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"M\"},\r\n      \"price\":{\"type\":\"Integer\", \"value\": 1199}\r\n    },\r\n    {\r\n      \"id\":\"Product013\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Port\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"M\"},\r\n      \"price\":{\"type\":\"Integer\", \"value\": 1099}\r\n    },\r\n    {\r\n      \"id\":\"Product001\", \"type\":\"Product\",\r\n      \"offerPrice\":{\"type\":\"Integer\", \"value\": 89}\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/op/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"op",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Tutorial 301 - Persistencia",
+			"item": [
+				{
+					"name": "MongoDB",
+					"item": [
+						{
+							"name": "Cygnus - Health",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5080/v1/version",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5080",
+									"path": [
+										"v1",
+										"version"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear suscripcion Cygnus a MongoDB",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"description\": \"Notify Cygnus Mongo-DB of all context changes\",\r\n  \"subject\": {\r\n    \"entities\": [\r\n      {\r\n        \"idPattern\": \".*\", \"type\": \"Product\"\r\n      }\r\n    ]\r\n  },\r\n  \"notification\": {\r\n    \"http\": {\r\n      \"url\": \"http://cygnus:5051/notify\"\r\n    }\r\n  },\r\n  \"throttling\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/subscriptions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"subscriptions"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PostGreSQL",
+					"item": [
+						{
+							"name": "Cygnus - Health PostgreSQL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5081/v1/version",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5081",
+									"path": [
+										"v1",
+										"version"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear suscripcion Cygnus a PostGreSQL",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"description\": \"Notify Cygnus PostGreSQL of all context changes\",\r\n  \"subject\": {\r\n    \"entities\": [\r\n      {\r\n        \"idPattern\": \".*\", \"type\": \"Product\"\r\n      }\r\n    ]\r\n  },\r\n  \"notification\": {\r\n    \"http\": {\r\n      \"url\": \"http://cygnus-sql:5055/notify\"\r\n    }\r\n  },\r\n  \"throttling\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/subscriptions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"subscriptions"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Actualizar precio producto 010 Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "openiot",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"price\":{\"value\": 22}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1026/v2/entities/Product010/attrs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1026",
+							"path": [
+								"v2",
+								"entities",
+								"Product010",
+								"attrs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ORION - Obtener suscriptions Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "fiware-service",
+								"type": "text",
+								"value": "openiot"
+							},
+							{
+								"key": "fiware-servicepath",
+								"type": "text",
+								"value": "/",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://{{orion}}/v2/subscriptions/",
+							"protocol": "http",
+							"host": [
+								"{{orion}}"
+							],
+							"path": [
+								"v2",
+								"subscriptions",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tutorial 201 - Agentes IoT",
+			"item": [
+				{
+					"name": "Registrar Grupo de sensores Calidad Aire Ultraligth Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "fiware-service",
+								"type": "text",
+								"value": "{{service}}"
+							},
+							{
+								"key": "fiware-servicepath",
+								"value": "{{servicepath-quality}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"services\": [\r\n   {\r\n     \"apikey\":      \"4jggokgpepnvsb2uv4s40d5911\",\r\n     \"cbroker\":     \"http://orion:1026\",\r\n     \"entity_type\": \"Product\",\r\n     \"resource\":    \"/iot/d\"\r\n   }\r\n ]\r\n}"
+						},
+						"url": {
+							"raw": "http://{{server}}:4041/iot/services?fiware-service=openiot&",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "4041",
+							"path": [
+								"iot",
+								"services"
+							],
+							"query": [
+								{
+									"key": "fiware-service",
+									"value": "openiot"
+								},
+								{
+									"key": "fiware-servicepath",
+									"value": "{{service}",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar sensor  producto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "fiware-service",
+								"type": "text",
+								"value": "{{service}}"
+							},
+							{
+								"key": "fiware-servicepath",
+								"type": "text",
+								"value": "{{servicepath-quality}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Product010\",\r\n      \"entity_name\": \"Product010\",\r\n      \"entity_type\": \"Product\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"name\", \"name\": \"n\", \"type\":\"String\"},\r\n\t\t{\"object_id\": \"size\", \"name\": \"s\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"price\", \"name\": \"p\", \"type\":\"Number\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "http://{{server}}:4041/iot/devices",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "4041",
+							"path": [
+								"iot",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List devices path - Calidad",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "openiot",
+								"type": "text"
+							},
+							{
+								"key": "fiware-servicepath",
+								"value": "{{servicepath-quality}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://{{server}}:4041/iot/devices",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "4041",
+							"path": [
+								"iot",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar dispositivo producto010 Ultralight",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "fiware-service",
+								"type": "text",
+								"value": "{{service}}"
+							},
+							{
+								"key": "fiware-servicepath",
+								"type": "text",
+								"value": "{{servicepath-quality}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "p|11|s|XL"
+						},
+						"url": {
+							"raw": "http://{{server}}:7896/iot/d?i=Product010&k=4jggokgpepnvsb2uv4s40d5911",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "7896",
+							"path": [
+								"iot",
+								"d"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "Product010"
+								},
+								{
+									"key": "k",
+									"value": "4jggokgpepnvsb2uv4s40d5911"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

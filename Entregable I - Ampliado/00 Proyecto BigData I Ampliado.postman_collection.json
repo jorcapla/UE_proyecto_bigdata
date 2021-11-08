@@ -557,6 +557,185 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Tutorial 201 - Agentes IoT",
+			"item": [
+				{
+					"name": "Registrar Grupo de sensores Calidad Aire Ultraligth Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "fiware-service",
+								"type": "text",
+								"value": "{{service}}"
+							},
+							{
+								"key": "fiware-servicepath",
+								"value": "{{servicepath-quality}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"services\": [\r\n   {\r\n     \"apikey\":      \"4jggokgpepnvsb2uv4s40d5911\",\r\n     \"cbroker\":     \"http://orion:1026\",\r\n     \"entity_type\": \"Product\",\r\n     \"resource\":    \"/iot/d\"\r\n   }\r\n ]\r\n}"
+						},
+						"url": {
+							"raw": "http://{{server}}:4041/iot/services?fiware-service=openiot&",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "4041",
+							"path": [
+								"iot",
+								"services"
+							],
+							"query": [
+								{
+									"key": "fiware-service",
+									"value": "openiot"
+								},
+								{
+									"key": "fiware-servicepath",
+									"value": "{{service}",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar sensor  producto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "fiware-service",
+								"type": "text",
+								"value": "{{service}}"
+							},
+							{
+								"key": "fiware-servicepath",
+								"type": "text",
+								"value": "{{servicepath-quality}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Product010\",\r\n      \"entity_name\": \"Product010\",\r\n      \"entity_type\": \"Product\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"name\", \"name\": \"n\", \"type\":\"String\"},\r\n\t\t{\"object_id\": \"size\", \"name\": \"s\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"price\", \"name\": \"p\", \"type\":\"Number\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "http://{{server}}:4041/iot/devices",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "4041",
+							"path": [
+								"iot",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List devices path - Calidad",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "fiware-service",
+								"value": "openiot",
+								"type": "text"
+							},
+							{
+								"key": "fiware-servicepath",
+								"value": "{{servicepath-quality}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://{{server}}:4041/iot/devices",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "4041",
+							"path": [
+								"iot",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar dispositivo producto010 Ultralight",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "fiware-service",
+								"type": "text",
+								"value": "{{service}}"
+							},
+							{
+								"key": "fiware-servicepath",
+								"type": "text",
+								"value": "{{servicepath-quality}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "p|11|s|XL"
+						},
+						"url": {
+							"raw": "http://{{server}}:7896/iot/d?i=Product010&k=4jggokgpepnvsb2uv4s40d5911",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"port": "7896",
+							"path": [
+								"iot",
+								"d"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "Product010"
+								},
+								{
+									"key": "k",
+									"value": "4jggokgpepnvsb2uv4s40d5911"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

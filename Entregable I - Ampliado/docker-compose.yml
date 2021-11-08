@@ -62,3 +62,5 @@ services:
         - "CYGNUS_LOG_LEVEL=DEBUG"
         - "CYGNUS_API_PORT=5081"
         - "CYGNUS_SERVICE_PORT=5055"
+        
+
