@@ -72,6 +72,11 @@
 										"key": "fiware-service",
 										"value": "openiot",
 										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
 									}
 								],
 								"body": {
@@ -106,6 +111,11 @@
 									{
 										"key": "fiware-service",
 										"value": "openiot",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
 										"type": "text"
 									}
 								],
@@ -575,11 +585,11 @@
 							{
 								"key": "fiware-service",
 								"type": "text",
-								"value": "{{service}}"
+								"value": "openiot"
 							},
 							{
 								"key": "fiware-servicepath",
-								"value": "{{servicepath-quality}}",
+								"value": "/",
 								"type": "text"
 							}
 						],
@@ -588,10 +598,10 @@
 							"raw": "{\r\n \"services\": [\r\n   {\r\n     \"apikey\":      \"4jggokgpepnvsb2uv4s40d5911\",\r\n     \"cbroker\":     \"http://orion:1026\",\r\n     \"entity_type\": \"Product\",\r\n     \"resource\":    \"/iot/d\"\r\n   }\r\n ]\r\n}"
 						},
 						"url": {
-							"raw": "http://{{server}}:4041/iot/services?fiware-service=openiot&",
+							"raw": "http://localhost:4041/iot/services?fiware-service=openiot&",
 							"protocol": "http",
 							"host": [
-								"{{server}}"
+								"localhost"
 							],
 							"port": "4041",
 							"path": [
@@ -625,12 +635,12 @@
 							{
 								"key": "fiware-service",
 								"type": "text",
-								"value": "{{service}}"
+								"value": "openiot"
 							},
 							{
 								"key": "fiware-servicepath",
 								"type": "text",
-								"value": "{{servicepath-quality}}"
+								"value": "/"
 							},
 							{
 								"key": "Content-Type",
@@ -641,13 +651,13 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Product010\",\r\n      \"entity_name\": \"Product010\",\r\n      \"entity_type\": \"Product\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"name\", \"name\": \"n\", \"type\":\"String\"},\r\n\t\t{\"object_id\": \"size\", \"name\": \"s\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"price\", \"name\": \"p\", \"type\":\"Number\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
+							"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Product010\",\r\n      \"entity_name\": \"Product010\",\r\n      \"entity_type\": \"Product\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"s\", \"name\": \"size\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"p\", \"name\": \"price\", \"type\":\"Integer\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
 						},
 						"url": {
-							"raw": "http://{{server}}:4041/iot/devices",
+							"raw": "http://localhost:4041/iot/devices",
 							"protocol": "http",
 							"host": [
-								"{{server}}"
+								"localhost"
 							],
 							"port": "4041",
 							"path": [
@@ -670,16 +680,15 @@
 							},
 							{
 								"key": "fiware-servicepath",
-								"value": "{{servicepath-quality}}",
-								"type": "text",
-								"disabled": true
+								"value": "/",
+								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://{{server}}:4041/iot/devices",
+							"raw": "http://localhost:4041/iot/devices",
 							"protocol": "http",
 							"host": [
-								"{{server}}"
+								"localhost"
 							],
 							"port": "4041",
 							"path": [
@@ -698,23 +707,23 @@
 							{
 								"key": "fiware-service",
 								"type": "text",
-								"value": "{{service}}"
+								"value": "openiot"
 							},
 							{
 								"key": "fiware-servicepath",
 								"type": "text",
-								"value": "{{servicepath-quality}}"
+								"value": "/"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "p|11|s|XL"
+							"raw": "p|15|s|L"
 						},
 						"url": {
-							"raw": "http://{{server}}:7896/iot/d?i=Product010&k=4jggokgpepnvsb2uv4s40d5911",
+							"raw": "http://localhost:7896/iot/d?i=Product010&k=4jggokgpepnvsb2uv4s40d5911",
 							"protocol": "http",
 							"host": [
-								"{{server}}"
+								"localhost"
 							],
 							"port": "7896",
 							"path": [
