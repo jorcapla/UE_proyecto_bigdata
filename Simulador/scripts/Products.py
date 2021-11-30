@@ -12,18 +12,18 @@ import random
 import requests
 
 class ProductsSimulation:
-    def sendData():
+    def sendData(iotagenturl,iotagentkey):
 
-        k="4jggokgpepnvsb2uv4s40d5911"
+        
         devicename1 ="Product010"  
         devicename2 ="Product011"
 
 
 
-        url = "http://localhost:7896/iot/d?i="
+        url = iotagenturl+"?i="
         #http://localhost:7896/iot/d?i=Product010&k=4jggokgpepnvsb2uv4s40d5911
-        endpoint1 = url+devicename1+"&k="+k
-        endpoint2 = url+devicename2+"&k="+k
+        endpoint1 = url+devicename1+"&k="+iotagentkey
+        endpoint2 = url+devicename2+"&k="+iotagentkey
         header = {"ContentType":"text/plain"} 
 
 

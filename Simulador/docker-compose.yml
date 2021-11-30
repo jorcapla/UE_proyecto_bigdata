@@ -5,9 +5,9 @@ services:
     image: nunsys/fiware-datagenerator-ue:latest
     hostname: data-generator
     networks:
-        - smartcity
+        - default
+    environment:
+        - "IOT_AGENT_URL=http://localhost:7896/iot/d"
+        - "IOT_AGENT_KEY=4jggokgpepnvsb2uv4s40d5911"
+
     
-networks:
-  smartcity:
-    external:
-      name: fiware_smartcity
