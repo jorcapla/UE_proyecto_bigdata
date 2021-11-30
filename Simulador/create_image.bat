@@ -1,0 +1,1 @@
+docker build . -t nunsys/fiware-datagenerator-ue:latest

@@ -1,0 +1,7 @@
+FROM python:3.7-alpine
+WORKDIR /home/data-generator
+ADD scripts/*.* /home/data-generator/
+#RUN chmod 755 generador_datos.sh
+RUN pip install requests
+CMD ["python","./generador_datos.py"]
+

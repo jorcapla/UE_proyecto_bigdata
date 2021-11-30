@@ -1,0 +1,13 @@
+version: "3.1"
+services:
+
+  data-generator:
+    image: nunsys/fiware-datagenerator-ue:latest
+    hostname: data-generator
+    networks:
+        - smartcity
+    
+networks:
+  smartcity:
+    external:
+      name: fiware_smartcity
