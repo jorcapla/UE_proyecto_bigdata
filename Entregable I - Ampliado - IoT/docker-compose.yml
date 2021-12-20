@@ -90,3 +90,26 @@ services:
         - IOTA_MONGO_DB=iotagentul
         - IOTA_HTTP_PORT=7896
         - IOTA_PROVIDER_URL=http://iot-agent:4041
+        
+        
+        
+  metabase-app:
+    image: metabase/metabase
+    ports:
+        - 4000:3000
+    restart: "always"
+    volumes:
+        - ./metabase-data:/metabase-data
+    depends_on:
+        - postgres-db
+    networks:
+        - default
+    environment:
+        - "MB_DB_TYPE=postgres"
+        - "MB_DB_DBNAME=metabase"
+        - "MB_DB_PORT=5432"
+        - "MB_DB_USER=postgres"
+        - "MB_DB_PASS=1dm3n3str1d4r"
+        - "MB_DB_HOST=postgres-db"
+        
+        
