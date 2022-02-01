@@ -157,11 +157,16 @@
 										"key": "fiware-service",
 										"value": "openiot",
 										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor1\", \"type\":\"Sensor\",\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":50},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":83},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 30},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Blasco Ibañez\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor1\", \n      \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor1\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":50},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":83},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 30},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Blasco Ibañez\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -192,11 +197,16 @@
 										"key": "fiware-service",
 										"value": "openiot",
 										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "default"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor2\", \"type\":\"Sensor\",\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":67},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":57},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 25},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Av. del Puerto\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor2\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor2\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":67},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":57},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 25},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Av. del Puerto\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -227,11 +237,16 @@
 										"key": "fiware-service",
 										"value": "openiot",
 										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "default"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor3\", \"type\":\"Sensor\",\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":70},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":90},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 20},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Paseo Alameda\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor3\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor3\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":70},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":90},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 20},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Paseo Alameda\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -262,11 +277,16 @@
 										"key": "fiware-service",
 										"value": "openiot",
 										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "default"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor4\", \"type\":\"Sensor\",\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":13},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":16},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 35},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Colón\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor4\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor4\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":13},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":16},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 35},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Colón\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -297,11 +317,16 @@
 										"key": "fiware-service",
 										"value": "openiot",
 										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "default"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor5\", \"type\":\"Sensor\",\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":37},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":41},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 24},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Ruzafa\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor5\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor5\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":37},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":41},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 24},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Ruzafa\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -318,6 +343,48 @@
 									"path": [
 										"v2",
 										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar Contenedor1",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"Porcentaje_llenado\":{\"value\": 11}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities/Contenedor1/attrs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities",
+										"Contenedor1",
+										"attrs"
 									]
 								}
 							},
@@ -459,7 +526,7 @@
 							"response": []
 						},
 						{
-							"name": "Actualizar precio producto 010",
+							"name": "Actualizar precio producto 010 Copy",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -752,10 +819,10 @@
 			"name": "Agentes IoT",
 			"item": [
 				{
-					"name": "Productos",
+					"name": "Residuos",
 					"item": [
 						{
-							"name": "Registrar Grupo de sensores Productos",
+							"name": "Registrar Grupo de sensores",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -778,7 +845,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n \"services\": [\r\n   {\r\n     \"apikey\":      \"4jggokgpepnvsb2uv4s40d5911\",\r\n     \"cbroker\":     \"http://orion:1026\",\r\n     \"entity_type\": \"Product\",\r\n     \"resource\":    \"/iot/d\"\r\n   }\r\n ]\r\n}"
+									"raw": "{\r\n \"services\": [\r\n   {\r\n     \"apikey\":      \"4jggokgpepnvsb2uv4s40d5911\",\r\n     \"cbroker\":     \"http://orion:1026\",\r\n     \"entity_type\": \"Sensor\",\r\n     \"resource\":    \"/iot/a\"\r\n   }\r\n ]\r\n}"
 								},
 								"url": {
 									"raw": "http://localhost:4041/iot/services",
@@ -813,224 +880,6 @@
 							"response": []
 						},
 						{
-							"name": "Registrar sensor  producto010",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "fiware-service",
-										"type": "text",
-										"value": "openiot"
-									},
-									{
-										"key": "fiware-servicepath",
-										"type": "text",
-										"value": "/"
-									},
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Product010\",\r\n      \"entity_name\": \"Product010\",\r\n      \"entity_type\": \"Product\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"s\", \"name\": \"size\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"p\", \"name\": \"price\", \"type\":\"Integer\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
-								},
-								"url": {
-									"raw": "http://localhost:4041/iot/devices",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "4041",
-									"path": [
-										"iot",
-										"devices"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Registrar sensor  producto010 Copy",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "fiware-service",
-										"type": "text",
-										"value": "openiot"
-									},
-									{
-										"key": "fiware-servicepath",
-										"type": "text",
-										"value": "/"
-									},
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"devices\": [\r\n        {\r\n            \"device_id\": \"Contenedor2\",\r\n            \"entity_name\": \"Contenedor2\",\r\n            \"entity_type\": \"Sensor\",\r\n            \"protocol\": \"PDI-IoTA-UltraLight\",\r\n            \"transport\": \"HTTP\",\r\n            \"attributes\": [\r\n                {\r\n                    \"object_id\": \"Porcentaje_llenado\",\r\n                    \"name\": \"l\",\r\n                    \"type\": \"Integer\"\r\n                },\r\n                {\r\n                    \"object_id\": \"Nivel_bateria\",\r\n                    \"name\": \"n\",\r\n                    \"type\": \"Integer\"\r\n                },\r\n                {\r\n                    \"object_id\": \"Temperatura\",\r\n                    \"name\": \"t\",\r\n                    \"type\": \"Integer\"\r\n                },\r\n                {\r\n                    \"object_id\": \"Zona\",\r\n                    \"name\": \"z\",\r\n                    \"type\": \"Text\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}"
-								},
-								"url": {
-									"raw": "http://localhost:4041/iot/devices",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "4041",
-									"path": [
-										"iot",
-										"devices"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Registrar sensor  producto011",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "fiware-service",
-										"type": "text",
-										"value": "openiot"
-									},
-									{
-										"key": "fiware-servicepath",
-										"type": "text",
-										"value": "/"
-									},
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Product011\",\r\n      \"entity_name\": \"Product011\",\r\n      \"entity_type\": \"Product\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"s\", \"name\": \"size\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"p\", \"name\": \"price\", \"type\":\"Integer\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
-								},
-								"url": {
-									"raw": "http://localhost:4041/iot/devices",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "4041",
-									"path": [
-										"iot",
-										"devices"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Actualizar dispositivo producto010 Ultralight",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "fiware-service",
-										"type": "text",
-										"value": "openiot"
-									},
-									{
-										"key": "fiware-servicepath",
-										"type": "text",
-										"value": "/"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "p|25|s|XL"
-								},
-								"url": {
-									"raw": "http://localhost:7896/iot/d?i=Product010&k=4jggokgpepnvsb2uv4s40d5911",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "7896",
-									"path": [
-										"iot",
-										"d"
-									],
-									"query": [
-										{
-											"key": "i",
-											"value": "Product010"
-										},
-										{
-											"key": "k",
-											"value": "4jggokgpepnvsb2uv4s40d5911"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Actualizar dispositivo producto011 Ultralight",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "fiware-service",
-										"type": "text",
-										"value": "openiot"
-									},
-									{
-										"key": "fiware-servicepath",
-										"type": "text",
-										"value": "/"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "p|13|s|XL|n|coke"
-								},
-								"url": {
-									"raw": "http://localhost:7896/iot/d?i=Product011&k=4jggokgpepnvsb2uv4s40d5911",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "7896",
-									"path": [
-										"iot",
-										"d"
-									],
-									"query": [
-										{
-											"key": "i",
-											"value": "Product011"
-										},
-										{
-											"key": "k",
-											"value": "4jggokgpepnvsb2uv4s40d5911"
-										}
-									]
-								}
-							},
-							"response": []
-						}
-					]
-				},
-				{
-					"name": "Contenedores",
-					"item": [
-						{
 							"name": "Registrar sensor  Contenedor1",
 							"request": {
 								"method": "POST",
@@ -1043,7 +892,7 @@
 									{
 										"key": "fiware-servicepath",
 										"type": "text",
-										"value": "/"
+										"value": "/residuos"
 									},
 									{
 										"key": "Content-Type",
@@ -1270,6 +1119,241 @@
 										{
 											"key": "i",
 											"value": "Contenedor1"
+										},
+										{
+											"key": "k",
+											"value": "4jggokgpepnvsb2uv4s40d5911"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Productos",
+					"item": [
+						{
+							"name": "Registrar Grupo de sensores Residuos",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/residuos",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"services\": [\r\n   {\r\n     \"apikey\":      \"4jggokgpepnvsb2uv4s40d5911\",\r\n     \"cbroker\":     \"http://orion:1026\",\r\n     \"entity_type\": \"Product\",\r\n     \"resource\":    \"/iot/product\"\r\n   }\r\n ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/services",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"services"
+									],
+									"query": [
+										{
+											"key": "fiware-service",
+											"value": "openiot",
+											"disabled": true
+										},
+										{
+											"key": "fiware-servicepath",
+											"value": "{{service}",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor  producto010",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Product010\",\r\n      \"entity_name\": \"Product010\",\r\n      \"entity_type\": \"Product\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"s\", \"name\": \"size\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"p\", \"name\": \"price\", \"type\":\"Integer\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor  producto011",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Product011\",\r\n      \"entity_name\": \"Product011\",\r\n      \"entity_type\": \"Product\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"s\", \"name\": \"size\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"p\", \"name\": \"price\", \"type\":\"Integer\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar dispositivo producto010 Ultralight",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "p|25|s|XL"
+								},
+								"url": {
+									"raw": "http://localhost:7896/iot/d?i=Product010&k=4jggokgpepnvsb2uv4s40d5911",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7896",
+									"path": [
+										"iot",
+										"d"
+									],
+									"query": [
+										{
+											"key": "i",
+											"value": "Product010"
+										},
+										{
+											"key": "k",
+											"value": "4jggokgpepnvsb2uv4s40d5911"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar dispositivo producto011 Ultralight",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "p|13|s|XL|n|coke"
+								},
+								"url": {
+									"raw": "http://localhost:7896/iot/d?i=Product011&k=4jggokgpepnvsb2uv4s40d5911",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7896",
+									"path": [
+										"iot",
+										"d"
+									],
+									"query": [
+										{
+											"key": "i",
+											"value": "Product011"
 										},
 										{
 											"key": "k",

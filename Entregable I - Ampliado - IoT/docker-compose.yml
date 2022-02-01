@@ -10,12 +10,12 @@ services:
         - "1026:1026"
     command: -dbhost mongo-db -logLevel DEBUG
   mongo-db:
-    image: mongo:3.6
+    image: mongo:latest
     ports:
         - "27017:27017"
     networks:
         - default
-    command: --bind_ip_all --smallfiles
+    command: --bind_ip_all 
   cygnus:
     image: fiware/cygnus-ngsi:latest
     depends_on:
@@ -32,6 +32,9 @@ services:
         - "CYGNUS_API_PORT=5080"
         - "CYGNUS_SERVICE_PORT=5051"     
         - "CYGNUS_MONGO_ATTR_PERSISTENCE=column" # data_model
+        #- "CYGNUS_MONGO_DATA_MODEL=dm-by-service-path" # data_model
+        - "CYGNUS_MONGO_DB_PREFIX=sti_"
+        - "CYGNUS_STH_DB_PREFIX=sth_"
         
   postgres-db:
     image: postgres:latest
@@ -106,7 +109,7 @@ services:
         - default
     environment:
         - "MB_DB_TYPE=postgres"
-        - "MB_DB_DBNAME=metabase"
+        - "MB_DB_DBNAME=postgres"
         - "MB_DB_PORT=5432"
         - "MB_DB_USER=postgres"
         - "MB_DB_PASS=1dm3n3str1d4r"

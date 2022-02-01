@@ -14,6 +14,6 @@ while 1==1:
 
   contenedor = ContenedorSimulation(IOT_AGENT_URL,IOT_AGENT_KEY)
   contenedor.sendData()
-  ProductsSimulation.sendData(IOT_AGENT_URL,IOT_AGENT_KEY)
+  
   i+=1
  
