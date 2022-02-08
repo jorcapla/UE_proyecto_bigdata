@@ -61,7 +61,7 @@
 			"name": "Entidades",
 			"item": [
 				{
-					"name": "Crear entidades",
+					"name": "Crear Entidades productos",
 					"item": [
 						{
 							"name": "Crear producto 10",
@@ -142,6 +142,126 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Crear producto 12",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"id\":\"Product012\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Coke\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"S\"},\r\n      \"price\":{\"type\":\"Float\", \"value\": 150}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear producto 13",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"id\":\"Product013\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Coke\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"S\"},\r\n      \"price\":{\"type\":\"Number\", \"value\": 150},\r\n      \"dateObserved\":{\"type\":\"Date\"}\r\n      \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear producto 14",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "openiot",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"id\":\"Product014\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Coke\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"S\"},\r\n      \"price\":{\"type\":\"Number\", \"value\": 150},\r\n      \"dateObserved\":{\"type\":\"Date\"}\r\n      \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
@@ -166,7 +286,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor1\", \n      \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor1\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":50},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":83},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 30},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Blasco Ibañez\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor1\", \n      \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor1\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":50},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":83},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 30},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Blasco Ibañez\"},\n      \"dateObserved\":{\"type\":\"DateTime\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -206,7 +326,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor2\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor2\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":67},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":57},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 25},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Av. del Puerto\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor2\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor2\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":67},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":57},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 25},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Av. del Puerto\"},\n      \"dateObserved\":{\"type\":\"DateTime\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -246,7 +366,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor3\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor3\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":70},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":90},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 20},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Paseo Alameda\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor3\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor3\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":70},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":90},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 20},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Paseo Alameda\"},\n      \"dateObserved\":{\"type\":\"DateTime\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -286,7 +406,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor4\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor4\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":13},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":16},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 35},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Colón\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor4\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor4\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":13},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":16},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 35},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Colón\"},\n      \"dateObserved\":{\"type\":\"DateTime\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -326,7 +446,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor5\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor5\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":37},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":41},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 24},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Ruzafa\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor5\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor5\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":37},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":41},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 24},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Ruzafa\"},\n      \"dateObserved\":{\"type\":\"DateTime\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -892,7 +1012,7 @@
 									{
 										"key": "fiware-servicepath",
 										"type": "text",
-										"value": "/residuos"
+										"value": "/"
 									},
 									{
 										"key": "Content-Type",
@@ -903,7 +1023,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor1\",\r\n      \"entity_name\": \"Contenedor1\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Integer\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Integer\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Integer\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor1\",\r\n      \"entity_name\": \"Contenedor1\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
 								},
 								"url": {
 									"raw": "http://localhost:4041/iot/devices",
@@ -944,7 +1064,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor2\",\r\n      \"entity_name\": \"Contenedor2\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Integer\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Integer\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Integer\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor2\",\r\n      \"entity_name\": \"Contenedor2\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
 								},
 								"url": {
 									"raw": "http://localhost:4041/iot/devices",
@@ -985,7 +1105,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor3\",\r\n      \"entity_name\": \"Contenedor3\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Integer\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Integer\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Integer\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor3\",\r\n      \"entity_name\": \"Contenedor3\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
 								},
 								"url": {
 									"raw": "http://localhost:4041/iot/devices",
@@ -1026,7 +1146,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor4\",\r\n      \"entity_name\": \"Contenedor4\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Integer\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Integer\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Integer\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor4\",\r\n      \"entity_name\": \"Contenedor4\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
 								},
 								"url": {
 									"raw": "http://localhost:4041/iot/devices",
@@ -1102,7 +1222,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "p|80|b|50|t|85"
+									"raw": "p|81|b|50|t|85"
 								},
 								"url": {
 									"raw": "http://localhost:7896/iot/d?i=Contenedor1&k=4jggokgpepnvsb2uv4s40d5911",
@@ -1275,6 +1395,129 @@
 							"response": []
 						},
 						{
+							"name": "Registrar sensor  producto011 Copy",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Product012\",\r\n      \"entity_name\": \"Product012\",\r\n      \"entity_type\": \"Product\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"s\", \"name\": \"size\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"p\", \"name\": \"price\", \"type\":\"Float\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor  producto013",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Product013\",\r\n      \"entity_name\": \"Product013\",\r\n      \"entity_type\": \"Product\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"s\", \"name\": \"size\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"p\", \"name\": \"price\", \"type\":\"Number\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor  producto014",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Product014\",\r\n      \"entity_name\": \"Product014\",\r\n      \"entity_type\": \"Product\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"s\", \"name\": \"size\", \"type\":\"Text\"},\r\n\t\t{\"object_id\": \"p\", \"name\": \"price\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Actualizar dispositivo producto010 Ultralight",
 							"request": {
 								"method": "POST",
@@ -1363,39 +1606,143 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Actualizar dispositivo producto012",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "p|11|s|XL|n|coke"
+								},
+								"url": {
+									"raw": "http://localhost:7896/iot/d?i=Product012&k=4jggokgpepnvsb2uv4s40d5911",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7896",
+									"path": [
+										"iot",
+										"d"
+									],
+									"query": [
+										{
+											"key": "i",
+											"value": "Product012"
+										},
+										{
+											"key": "k",
+											"value": "4jggokgpepnvsb2uv4s40d5911"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar dispositivo producto013",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "p|11|s|XL|n|coke"
+								},
+								"url": {
+									"raw": "http://localhost:7896/iot/d?i=Product013&k=4jggokgpepnvsb2uv4s40d5911",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7896",
+									"path": [
+										"iot",
+										"d"
+									],
+									"query": [
+										{
+											"key": "i",
+											"value": "Product013"
+										},
+										{
+											"key": "k",
+											"value": "4jggokgpepnvsb2uv4s40d5911"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar dispositivo producto014",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "p|11|s|XL|n|coke|d|2019-07-06T12:06:47.00Z"
+								},
+								"url": {
+									"raw": "http://localhost:7896/iot/d?i=Product014&k=4jggokgpepnvsb2uv4s40d5911",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7896",
+									"path": [
+										"iot",
+										"d"
+									],
+									"query": [
+										{
+											"key": "i",
+											"value": "Product014"
+										},
+										{
+											"key": "k",
+											"value": "4jggokgpepnvsb2uv4s40d5911"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					]
-				},
-				{
-					"name": "List devices path - Calidad",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "fiware-service",
-								"value": "openiot",
-								"type": "text"
-							},
-							{
-								"key": "fiware-servicepath",
-								"value": "/",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:4041/iot/devices",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4041",
-							"path": [
-								"iot",
-								"devices"
-							]
-						}
-					},
-					"response": []
 				}
 			]
 		}
