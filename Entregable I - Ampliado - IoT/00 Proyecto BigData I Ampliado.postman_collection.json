@@ -6,58 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "Tutorial 101",
-			"item": [
-				{
-					"name": "Health",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://{{orion}}/version",
-							"protocol": "http",
-							"host": [
-								"{{orion}}"
-							],
-							"path": [
-								"version"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Crear Entididad",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"store_003\",\r\n    \"type\": \"Store\",\r\n    \"address\": {\r\n        \"type\": \"PostalAddress\",\r\n        \"value\": {\r\n            \"streetAddress\": \"Bornholmer Straße 65\",\r\n            \"addressRegion\": \"Berlin\",\r\n            \"addressLocality\": \"Prenzlauer Berg\",\r\n            \"postalCode\": \"10439\"\r\n        },\r\n        \"metadata\": {\r\n            \"verified\": {\r\n                \"value\": true,\r\n                \"type\": \"Boolean\"\r\n            }\r\n        }\r\n    },\r\n    \"location\": {\r\n        \"type\": \"geo:json\",\r\n        \"value\": {\r\n             \"type\": \"Point\",\r\n             \"coordinates\": [13.3986, 52.5547]\r\n        }\r\n    },\r\n    \"name\": {\r\n        \"type\": \"Text\",\r\n        \"value\": \"Bösebrücke Einkauf\"\r\n    }\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:1026/v2/entities",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "1026",
-							"path": [
-								"v2",
-								"entities"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
 			"name": "Entidades",
 			"item": [
 				{
@@ -81,7 +29,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n      \"id\":\"Product010\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Lemonade\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"S\"},\r\n      \"price\":{\"type\":\"Integer\", \"value\": 99}\r\n}",
+									"raw": "{\r\n      \"id\":\"Product010\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Lemonade\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"S\"},\r\n      \"price\":{\"type\":\"Integer\", \"value\": 99},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -121,7 +69,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n      \"id\":\"Product011\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Coke\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"S\"},\r\n      \"price\":{\"type\":\"Integer\", \"value\": 150}\r\n}",
+									"raw": "{\r\n      \"id\":\"Product011\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Coke\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"S\"},\r\n      \"price\":{\"type\":\"Integer\", \"value\": 150},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -161,7 +109,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n      \"id\":\"Product012\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Coke\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"S\"},\r\n      \"price\":{\"type\":\"Float\", \"value\": 150}\r\n}",
+									"raw": "{\r\n      \"id\":\"Product012\", \"type\":\"Product\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Coke\"},\r\n      \"size\":{\"type\":\"Text\", \"value\": \"S\"},\r\n      \"price\":{\"type\":\"Float\", \"value\": 150},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -286,7 +234,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor1\", \n      \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor1\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":50},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":83},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 30},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Blasco Ibañez\"},\n      \"dateObserved\":{\"type\":\"DateTime\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor1\", \n      \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor1\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":50},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":83},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 30},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Blasco Ibañez\"},\n      \"dateObserved\":{\"type\":\"Datetime\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -326,7 +274,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor2\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor2\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":67},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":57},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 25},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Av. del Puerto\"},\n      \"dateObserved\":{\"type\":\"DateTime\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor2\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor2\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":67},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":57},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 25},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Av. del Puerto\"},\n      \"dateObserved\":{\"type\":\"Datetime\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -366,7 +314,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor3\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor3\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":70},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":90},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 20},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Paseo Alameda\"},\n      \"dateObserved\":{\"type\":\"DateTime\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor3\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor3\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":70},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":90},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 20},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Paseo Alameda\"},\n      \"dateObserved\":{\"type\":\"Datetime\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -406,7 +354,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor4\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor4\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":13},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":16},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 35},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Colón\"},\n      \"dateObserved\":{\"type\":\"DateTime\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor4\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor4\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":13},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":16},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 35},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Colón\"},\n      \"dateObserved\":{\"type\":\"Datetime\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -446,7 +394,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n      \"id\":\"Contenedor5\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor5\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":37},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":41},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 24},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Ruzafa\"},\n      \"dateObserved\":{\"type\":\"DateTime\"}\n}",
+									"raw": "{\n      \"id\":\"Contenedor5\", \"type\":\"Sensor\",\n      \"name\":{\"type\":\"Text\", \"value\": \"Contenedor5\"},\n      \"Porcentaje_llenado\":{\"type\":\"Integer\", \"value\":37},\n      \"Nivel_bateria\":{\"type\":\"Integer\", \"value\":41},\n      \"Temperatura\":{\"type\":\"Integer\", \"value\": 24},\n      \"Zona\":{\"type\":\"Text\", \"value\": \"Ruzafa\"},\n      \"dateObserved\":{\"type\":\"Datetime\"}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -505,6 +453,195 @@
 										"entities",
 										"Contenedor1",
 										"attrs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Crear Entidades de Calidad Aire",
+					"item": [
+						{
+							"name": "CalidadAire01",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"id\":\"Calidad01\", \"type\":\"Calidad_Aire\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 01\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CalidadAire02",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"id\":\"Calidad02\", \"type\":\"Calidad_Aire\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 02\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CalidadAire03",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"id\":\"Calidad03\", \"type\":\"Calidad_Aire\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 03\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CalidadAire04",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"id\":\"Calidad04\", \"type\":\"Calidad_Aire\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 04\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CalidadAire05",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"value": "smartcity",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"id\":\"Calidad05\", \"type\":\"Calidad_Aire\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 05\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:1026/v2/entities",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "1026",
+									"path": [
+										"v2",
+										"entities"
 									]
 								}
 							},
@@ -833,7 +970,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"description\": \"Notify Cygnus PostGreSQL of all context changes\",\r\n  \"subject\": {\r\n    \"entities\": [\r\n      {\r\n        \"idPattern\": \".*\", \"type\": \"Product\"\r\n      }\r\n    ]\r\n  },\r\n  \"notification\": {\r\n    \"http\": {\r\n      \"url\": \"http://cygnus-sql:5055/notify\"\r\n    }\r\n  },\r\n  \"throttling\": 1\r\n}",
+									"raw": "{\r\n  \"description\": \"Notify Cygnus PostGreSQL of all context changes\",\r\n  \"subject\": {\r\n    \"entities\": [\r\n      {\r\n        \"idPattern\": \".*\"\r\n      }\r\n    ]\r\n  },\r\n  \"notification\": {\r\n    \"http\": {\r\n      \"url\": \"http://cygnus-sql:5055/notify\"\r\n    }\r\n  },\r\n  \"throttling\": 1\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -870,7 +1007,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n      \"price\":{\"value\": 22},\r\n      \"size\":{\"value\":\"XL\"}\r\n}",
+							"raw": "{\r\n      \"price\":{\"value\": 60},\r\n      \"size\":{\"value\":\"XL\"}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -965,7 +1102,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n \"services\": [\r\n   {\r\n     \"apikey\":      \"4jggokgpepnvsb2uv4s40d5911\",\r\n     \"cbroker\":     \"http://orion:1026\",\r\n     \"entity_type\": \"Sensor\",\r\n     \"resource\":    \"/iot/a\"\r\n   }\r\n ]\r\n}"
+									"raw": "{\r\n \"services\": [\r\n   {\r\n     \"apikey\":      \"4jggokgpepnvsb2uv4s40d5911\",\r\n     \"cbroker\":     \"http://orion:1026\",\r\n     \"entity_type\": \"Sensor\",\r\n     \"resource\":    \"/iot/d\"\r\n   }\r\n ]\r\n}"
 								},
 								"url": {
 									"raw": "http://localhost:4041/iot/services",
@@ -1000,7 +1137,7 @@
 							"response": []
 						},
 						{
-							"name": "Registrar sensor  Contenedor1",
+							"name": "Registrar sensor  Contenedor1c",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -1023,7 +1160,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor1\",\r\n      \"entity_name\": \"Contenedor1\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor1\",\r\n      \"entity_name\": \"Contenedor1\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
 								},
 								"url": {
 									"raw": "http://localhost:4041/iot/devices",
@@ -1064,7 +1201,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor2\",\r\n      \"entity_name\": \"Contenedor2\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor2\",\r\n      \"entity_name\": \"Contenedor2\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n           {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
 								},
 								"url": {
 									"raw": "http://localhost:4041/iot/devices",
@@ -1105,7 +1242,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor3\",\r\n      \"entity_name\": \"Contenedor3\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor3\",\r\n      \"entity_name\": \"Contenedor3\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n           {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
 								},
 								"url": {
 									"raw": "http://localhost:4041/iot/devices",
@@ -1146,7 +1283,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor4\",\r\n      \"entity_name\": \"Contenedor4\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor4\",\r\n      \"entity_name\": \"Contenedor4\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n           {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
 								},
 								"url": {
 									"raw": "http://localhost:4041/iot/devices",
@@ -1187,7 +1324,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor5\",\r\n      \"entity_name\": \"Contenedor5\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Integer\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Integer\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Integer\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Contenedor5\",\r\n      \"entity_name\": \"Contenedor5\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n           {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n        {\"object_id\": \"p\", \"name\": \"Porcentaje_llenado\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"b\", \"name\": \"Nivel_bateria\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"t\", \"name\": \"Temperatura\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
 								},
 								"url": {
 									"raw": "http://localhost:4041/iot/devices",
@@ -1222,7 +1359,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "p|81|b|50|t|85"
+									"raw": "p|81|b|50|t|85|d|2019-07-06T12:06:47.00Z"
 								},
 								"url": {
 									"raw": "http://localhost:7896/iot/d?i=Contenedor1&k=4jggokgpepnvsb2uv4s40d5911",
@@ -1395,7 +1532,7 @@
 							"response": []
 						},
 						{
-							"name": "Registrar sensor  producto011 Copy",
+							"name": "Registrar sensor  producto012",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -1535,7 +1672,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "p|25|s|XL"
+									"raw": "p|20|s|XL"
 								},
 								"url": {
 									"raw": "http://localhost:7896/iot/d?i=Product010&k=4jggokgpepnvsb2uv4s40d5911",

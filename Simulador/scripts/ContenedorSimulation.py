@@ -25,13 +25,13 @@ class ContenedorSimulation:
         
 
     
-    def payload(self,date):
+    def payload(self,devicename,date):
         #p|80|b|50|t|85|d|%Y-%m-%dT%H:%M:%SZ
         ahora = date.strftime("%Y-%m-%dT%H:%M:%SZ")
         self.percentage = random.uniform(5, 100)
         self.battery = random.uniform(1, 50)
         self.temperature = random.uniform(1, 50)
-        payloadStr = "p|"+str("{0:.2f}".format(self.percentage))+"|b|"+str("{0:.2f}".format(self.battery))+"|t|"+str("{0:.2f}".format(self.temperature))+"|d|"+str(ahora) 
+        payloadStr = "n|"+devicename+"|p|"+str("{0:.2f}".format(self.percentage))+"|b|"+str("{0:.2f}".format(self.battery))+"|t|"+str("{0:.2f}".format(self.temperature))+"|d|"+str(ahora) 
         return payloadStr
 
     def sendData(self):
@@ -43,7 +43,7 @@ class ContenedorSimulation:
             devicename="Contenedor"+str(i)
             endpoint1 = url+devicename+"&k="+self.iotagentkey
             header = {"ContentType":"text/plain"} 
-            payload1 = self.payload(datetime.datetime.now())
+            payload1 = self.payload(devicename,datetime.datetime.now())
             r1 = requests.post(url= endpoint1,headers=header, data=payload1)
             print("datos sensor {} {} ".format(devicename,payload1))
             time.sleep(1)
@@ -62,7 +62,7 @@ class ContenedorSimulation:
            
             while idays >=1:
                 date=datetime.datetime.now() + datetime.timedelta(days=idays*-1)
-                payload1 = self.payload(date)
+                payload1 = self.payload(devicename,date)
                 r1 = requests.post(url= endpoint1,headers=header, data=payload1)
                 print("datos sensor {} {} ".format(devicename,payload1))
                 idays-=1
