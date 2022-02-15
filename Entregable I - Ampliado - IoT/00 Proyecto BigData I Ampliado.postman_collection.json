@@ -470,13 +470,18 @@
 								"header": [
 									{
 										"key": "fiware-service",
-										"value": "smartcity",
+										"value": "openiot",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n      \"id\":\"Calidad01\", \"type\":\"Calidad_Aire\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 01\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
+									"raw": "{\r\n      \"id\":\"Calidad01\", \"type\":\"Sensor\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 01\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO2\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"Datetime\"}\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -508,19 +513,18 @@
 								"header": [
 									{
 										"key": "fiware-service",
-										"value": "smartcity",
+										"value": "openiot",
 										"type": "text"
 									},
 									{
-										"key": "",
-										"value": "",
-										"type": "text",
-										"disabled": true
+										"key": "fiware-servicepath",
+										"value": "/",
+										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n      \"id\":\"Calidad02\", \"type\":\"Calidad_Aire\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 02\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
+									"raw": "{\r\n      \"id\":\"Calidad02\", \"type\":\"Sensor\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 02\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO2\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"Datetime\"}\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -549,13 +553,18 @@
 								"header": [
 									{
 										"key": "fiware-service",
-										"value": "smartcity",
+										"value": "openiot",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n      \"id\":\"Calidad03\", \"type\":\"Calidad_Aire\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 03\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
+									"raw": "{\r\n      \"id\":\"Calidad03\", \"type\":\"Sensor\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 03\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO2\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"Datetime\"}\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -584,13 +593,18 @@
 								"header": [
 									{
 										"key": "fiware-service",
-										"value": "smartcity",
+										"value": "openiot",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n      \"id\":\"Calidad04\", \"type\":\"Calidad_Aire\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 04\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
+									"raw": "{\r\n      \"id\":\"Calidad04\", \"type\":\"Sensor\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 04\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO2\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"Datetime\"}\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -619,13 +633,18 @@
 								"header": [
 									{
 										"key": "fiware-service",
-										"value": "smartcity",
+										"value": "openiot",
+										"type": "text"
+									},
+									{
+										"key": "fiware-servicepath",
+										"value": "/",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n      \"id\":\"Calidad05\", \"type\":\"Calidad_Aire\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 05\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"DateTime\"}\r\n}",
+									"raw": "{\r\n      \"id\":\"Calidad05\", \"type\":\"Sensor\",\r\n      \"name\":{\"type\":\"Text\", \"value\":\"Calidad ambiental 05\"},\r\n      \"NO2\":{\"type\":\"Float\", \"value\":\"0\"},\r\n      \"SO2\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"CO\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"O3\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"H2S\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"DB\":{\"type\":\"Float\",\"value\":\"0\"},\r\n      \"dateObserved\":{\"type\":\"Datetime\"}\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1874,6 +1893,216 @@
 											"key": "k",
 											"value": "4jggokgpepnvsb2uv4s40d5911"
 										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CalidadAire",
+					"item": [
+						{
+							"name": "Registrar sensor Calidad Aire 01",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Calidad01\",\r\n      \"entity_name\": \"Calidad01\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n        {\"object_id\": \"NO2\", \"name\": \"NO2\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"SO2\", \"name\": \"SO2\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"CO\", \"name\": \"CO\", \"type\":\"Number\"},\r\n        {\"object_id\": \"O3\", \"name\": \"O3\", \"type\":\"Number\"},\r\n        {\"object_id\": \"H2S\", \"name\": \"H2S\", \"type\":\"Number\"},\r\n        {\"object_id\": \"DB\", \"name\": \"DB\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor Calidad Aire 02",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Calidad02\",\r\n      \"entity_name\": \"Calidad02\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n        {\"object_id\": \"NO2\", \"name\": \"NO2\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"SO2\", \"name\": \"SO2\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"CO\", \"name\": \"CO\", \"type\":\"Number\"},\r\n        {\"object_id\": \"O3\", \"name\": \"O3\", \"type\":\"Number\"},\r\n        {\"object_id\": \"H2S\", \"name\": \"H2S\", \"type\":\"Number\"},\r\n        {\"object_id\": \"DB\", \"name\": \"DB\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor Calidad Aire 03",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Calidad03\",\r\n      \"entity_name\": \"Calidad03\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n        {\"object_id\": \"NO2\", \"name\": \"NO2\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"SO2\", \"name\": \"SO2\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"CO\", \"name\": \"CO\", \"type\":\"Number\"},\r\n        {\"object_id\": \"O3\", \"name\": \"O3\", \"type\":\"Number\"},\r\n        {\"object_id\": \"H2S\", \"name\": \"H2S\", \"type\":\"Number\"},\r\n        {\"object_id\": \"DB\", \"name\": \"DB\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor Calidad Aire 04",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Calidad04\",\r\n      \"entity_name\": \"Calidad04\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n        {\"object_id\": \"NO2\", \"name\": \"NO2\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"SO2\", \"name\": \"SO2\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"CO\", \"name\": \"CO\", \"type\":\"Number\"},\r\n        {\"object_id\": \"O3\", \"name\": \"O3\", \"type\":\"Number\"},\r\n        {\"object_id\": \"H2S\", \"name\": \"H2S\", \"type\":\"Number\"},\r\n        {\"object_id\": \"DB\", \"name\": \"DB\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar sensor Calidad Aire 05",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "fiware-service",
+										"type": "text",
+										"value": "openiot"
+									},
+									{
+										"key": "fiware-servicepath",
+										"type": "text",
+										"value": "/"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"devices\": [\r\n\t{\r\n      \"device_id\": \"Calidad05\",\r\n      \"entity_name\": \"Calidad05\",\r\n      \"entity_type\": \"Sensor\",\r\n      \"protocol\": \"PDI-IoTA-UltraLight\",\r\n      \"transport\": \"HTTP\",\r\n       \"attributes\": [\r\n        {\"object_id\": \"n\", \"name\": \"name\", \"type\":\"Text\"},\r\n        {\"object_id\": \"NO2\", \"name\": \"NO2\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"SO2\", \"name\": \"SO2\", \"type\":\"Number\"},\r\n\t\t{\"object_id\": \"CO\", \"name\": \"CO\", \"type\":\"Number\"},\r\n        {\"object_id\": \"O3\", \"name\": \"O3\", \"type\":\"Number\"},\r\n        {\"object_id\": \"H2S\", \"name\": \"H2S\", \"type\":\"Number\"},\r\n        {\"object_id\": \"DB\", \"name\": \"DB\", \"type\":\"Number\"},\r\n        {\"object_id\": \"d\", \"name\": \"dateObserved\", \"type\":\"DateTime\"}\r\n       ]\r\n    }\r\n  ]\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost:4041/iot/devices",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"iot",
+										"devices"
 									]
 								}
 							},

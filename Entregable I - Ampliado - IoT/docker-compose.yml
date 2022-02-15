@@ -111,7 +111,7 @@ services:
         - default
     environment:
         - "MB_DB_TYPE=postgres"
-        - "MB_DB_DBNAME=metabase"
+        - "MB_DB_DBNAME=postgres"
         - "MB_DB_PORT=5432"
         - "MB_DB_USER=postgres"
         - "MB_DB_PASS=1dm3n3str1d4r"

@@ -11,7 +11,7 @@ import time
 import random
 import requests
 
-class ContenedorSimulation:
+class CalidadAireSimulation:
 
     percentage=0; 
     battery =0;
@@ -27,11 +27,16 @@ class ContenedorSimulation:
     
     def payload(self,devicename,date):
         #p|80|b|50|t|85|d|%Y-%m-%dT%H:%M:%SZ
+        #NO2|80|SO2|50|CO|85|O3|80|H2S|50|DB|85|d|%Y-%m-%dT%H:%M:%SZ
         ahora = date.strftime("%Y-%m-%dT%H:%M:%SZ")
-        self.percentage = random.uniform(5, 100)
-        self.battery = random.uniform(1, 50)
-        self.temperature = random.uniform(1, 50)
-        payloadStr = "n|"+devicename+"|p|"+str("{0:.2f}".format(self.percentage))+"|b|"+str("{0:.2f}".format(self.battery))+"|t|"+str("{0:.2f}".format(self.temperature))+"|d|"+str(ahora) 
+        self.NO2 = random.uniform(1, 500)
+        self.SO2 = random.uniform(1, 50)
+        self.CO = random.uniform(1, 15)
+        self.O3 = random.uniform(5, 100)
+        self.H2S = random.uniform(1, 50)
+        self.DB = random.uniform(1, 50)
+        payloadStr = "n|"+devicename+"|NO2|"+str("{0:.2f}".format(self.NO2))+"|SO2|"+str("{0:.2f}".format(self.SO2))+"|CO|"+str("{0:.2f}".format(self.CO))
+        payloadStr= payloadStr+ "|O3|"+str("{0:.2f}".format(self.O3))+"|H2S|"+str("{0:.2f}".format(self.H2S))+"|DB|"+str("{0:.2f}".format(self.DB))+"|d|"+str(ahora) 
         return payloadStr
 
     def sendData(self):
@@ -40,7 +45,7 @@ class ContenedorSimulation:
 
         i=1
         while i<=5:
-            devicename="Contenedor"+str(i)
+            devicename="Calidad0"+str(i)
             endpoint1 = url+devicename+"&k="+self.iotagentkey
             header = {"ContentType":"text/plain"} 
             payload1 = self.payload(devicename,datetime.datetime.now())
