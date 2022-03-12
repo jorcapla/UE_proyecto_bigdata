@@ -9,7 +9,7 @@ Este carpeta contiene todos los ejemplos prácticos realizados( o futuribles) pa
 
 Los ejercicios realizados son los siguientes:
 
-- [X] [Detección de anomalías](Anomaly%20Detection/readme.md)
+- [X] [Detección de anomalías](ejercicios/readme.md)
 - [ ] Predicción averías en motores eléctricos
 - [ ] Predicción averías en motores electricos con datos de mantenimiento
 - [ ] Otros
