@@ -1,0 +1,21 @@
+version: '3'
+services:
+    smartpricing-app:
+        image: smartpricingcontainer.azurecr.io/smartpricing-app:latest
+
+        ports:
+            - 80:8080
+        networks:
+            - smartpricing       
+    smartpricing-ai:
+        image: smartpricingcontainer.azurecr.io/smartpricing-ai:latest
+
+        ports:
+            - 8080:5000
+        networks:
+            - smartpricing              
+ 
+
+networks:
+  smartpricing:
+    driver: bridge

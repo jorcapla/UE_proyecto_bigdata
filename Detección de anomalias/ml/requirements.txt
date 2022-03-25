@@ -1,0 +1,9 @@
+flask==1.0.2
+flask-cors==3.0.4
+NumPy >=1.11.0
+SciPy >=0.17.0
+pandas>=0.23.0
+scikit-learn>=0.19.1
+pyodbc>=4.0.0
+
+
